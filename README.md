@@ -4,8 +4,12 @@
 
 Chrome Extension for opening Feedly articles in a background tab on custom hotkey
 
-Published on the [Chrome Web Store](https://chrome.google.com/webstore/detail/feedly-background-article/oilgpoalabnhlfokadagigcpjhnoailn?hl=en&authuser=0)
+Adapted from [davidz627/feedlyBackgroundArticles](https://github.com/davidz627/feedlyBackgroundArticles).
 
-## Contributing
 
-Feel free to open PR's or issues against this Repo, I am active on Github :)
+## Installation (without Chrome Web Store)
+
+1. Open Extensions overview
+2. Click `Load unpacked`
+3. Select the `FeedlyBackground` folder and click "Select Folder"
+
