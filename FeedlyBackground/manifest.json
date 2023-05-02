@@ -4,10 +4,7 @@
   "version": "0.21",
   "description": "Opens Feedly articles in a background tab on custom hotkey",
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
@@ -22,8 +19,10 @@
       "all_frames": true
     }
   ],
-  "browser_action": {
-    "default_popup": "popup.html"
+  "action": {
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
   },
   "icons": {
     "128": "transparent_feedly_icon.png"
@@ -35,5 +34,5 @@
   "permissions": [
     "storage"
   ],
-  "manifest_version": 2
+  "manifest_version": 3
 }
