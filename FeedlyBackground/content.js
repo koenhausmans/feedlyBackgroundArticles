@@ -10,7 +10,7 @@ var keyListener = function (e) {
         var targetURL = null
         var inlinedFrame = $('.inlineFrame--selected').find('a.entryTitle')
         var openedArticle = $("[aria-label='Opened Article']").find('a.entryTitle')
-        var selectedArticle = $('.MagazineLayout--selected').find('a#EntryTitleLink-selected')
+        var selectedArticle = $('.MagazineLayout--selected').find('a.EntryTitleLink')
         if (inlinedFrame.length != 0) {
             targetURL = inlinedFrame.attr('href')
         } else if (openedArticle.length != 0) {
