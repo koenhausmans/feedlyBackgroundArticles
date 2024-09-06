@@ -8,15 +8,19 @@ var keyListener = function (e) {
     if (!e.repeat && e.key === hotkey) {
         // Find the selected frame's title link
         var targetURL = null
-        var inlinedFrame = $('.inlineFrame--selected').find('a.entryTitle')
-        var openedArticle = $("[aria-label='Opened Article']").find('a.entryTitle')
-        var selectedArticle = $('.MagazineLayout--selected').find('a.EntryTitleLink')
-        if (inlinedFrame.length != 0) {
-            targetURL = inlinedFrame.attr('href')
-        } else if (openedArticle.length != 0) {
-            targetURL = openedArticle.attr('href')
-        } else if (selectedArticle.length != 0) {
-            targetURL = selectedArticle.attr('href')
+        var selectedArticle00 = $('.inlineFrame--selected').find('a.entryTitle')
+        var selectedArticle01 = $("[aria-label='Opened Article']").find('a.entryTitle')
+        var selectedArticle02 = $('.MagazineLayout--selected').find('a.EntryTitleLink')
+        var selectedArticle03 = $('a.EntryTitleLink--selected')
+
+        if (selectedArticle00.length != 0) {
+            targetURL = selectedArticle00.attr('href')
+        } else if (selectedArticle01.length != 0) {
+            targetURL = selectedArticle01.attr('href')
+        } else if (selectedArticle02.length != 0) {
+            targetURL = selectedArticle02.attr('href')
+        } else if (selectedArticle03.length != 0) {
+            targetURL = selectedArticle03.attr('href')
         } else {
             console.log("No target URLs found")
         }

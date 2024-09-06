@@ -13,3 +13,8 @@ Adapted from [davidz627/feedlyBackgroundArticles](https://github.com/davidz627/f
 2. Click `Load unpacked`
 3. Select the `FeedlyBackground` folder and click "Select Folder"
 
+## Changelog
+
+### 2024-09-06
+
+- Added new search after Feedly obfuscated all class names and IDs
